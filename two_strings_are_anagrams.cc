@@ -13,7 +13,7 @@ public:
     {
         if (s.empty() || s.length() == 0) return (t.length() == 0 || t.empty());
         if (s.length() != t.length()) return false;
-        int map[256] = {0};
+        int map[256] = {0}; /* without {0} will not pass the test case */
         for (int i = 0; i < s.length(); ++i)
         {
             ++map[s[i]];
